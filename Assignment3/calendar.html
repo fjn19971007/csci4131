@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script_calendar.js"></script>
+        <script type="text/javascript" src="script_map.js"></script>
+        <meta charset="utf-8">
+        <title>My Academic Calendar</title>
+    </head>
+    <body>
+        <div>
+          <nav>
+            <a class="active" href="calendar.html">My Calendar</a>
+            <a href="form.html">Form Input</a>
+          </nav>
+        </div>
+
+        <div class="scroll-left" id="scroll">
+          <p id="scrollText">No Event Today! Have a good Weekend!!</p>
+        </div>
+
+        <div>
+          <table id="table">
+            <tr id="monday">
+                <th>Mon</th>
+                <td class="anderson"><p><b>CSCI 2021</b> <br><time>10:10</time> - <time>11:00</time> <br>Anderson Hall 270</p><img alt="image" src="images/anderson.jpg"></td>
+                <td class="molecular"><p><b>CSCI 2041</b> <br><time>11:15</time> - <time>12:05</time> <br>Molecular Cell Biology 3-120</p><img alt="image" src="images/molecular.jpg"></td>
+                <td class="fraser"><p><b>CSCI 4131</b> <br><time>13:00</time> - <time>14:15</time> <br>Fraser Hall 101</p><img alt="image" src="images/fraser.jpg"></td>
+                <td class="tate"><p><b>CSCI 4041</b> <br><time>18:30</time> - <time>21:00</time> <br>Tate Hall 270</p><img alt="image" src="images/tate.jpg"></td>
+            </tr>
+            <tr id="tuesday">
+                <th>Tue</th>
+                <td class="tate"><p><b>AST 1001</b> <br><time>09:45</time> - <time>11:00</time> <br>Tate Hall B20</p><img alt="image" src="images/tate.jpg"></td>
+                <td class="keller"><p><b>CSCI 2041</b> <br><time>11:15</time> - <time>12:05</time> <br>Keller Hall 1-250</p><img alt="image" src="images/keller.jpg"></td>
+                <td class="tate"> <p><b>AST 1001</b> <br><time>13:25</time> - <time>15:20</time> <br>Tate Hall B27</p><img alt="image" src="images/tate.jpg"></td>
+                <td><img alt="image" src="images/gopher.png"></td>
+            </tr>
+            <tr id="wednesday">
+                <th>Wed</th>
+                <td class="anderson"><p><b>CSCI 2021</b> <br><time>10:10</time> - <time>11:00</time> <br>Anderson Hall 270</p><img alt="image" src="images/anderson.jpg"></td>
+                <td class="molecular"><p><b>CSCI 2041</b> <br><time>11:15</time> - <time>12:05</time> <br>Molecular Cell Biology 3-120</p><img alt="image" src="images/molecular.jpg"></td>
+                <td class="fraser"><p><b>CSCI 4131</b> <br><time>13:00</time> - <time>14:15</time> <br>Fraser Hall 101</p><img alt="image" src="images/fraser.jpg"></td>
+                <td><img alt="image" src="images/gopher.png"></td>
+            </tr>
+            <tr id="thursday">
+                <th>Thu</th>
+                <td class="tate"><p><b>AST 1001</b> <br><time>09:45</time> - <time>11:00</time> <br>Tate Hall B20</p><img alt="image" src="images/tate.jpg"></td>
+                <td class="molecular"><p><b>CSCI 2041</b> <br><time>11:15</time> - <time>12:05</time> <br>Molecular Cell Biology 3-120</p><img alt="image" src="images/molecular.jpg"></td>
+                <td class="keller"><p><b>CSCI 4041</b> <br><time>17:45</time> - <time>18:35</time> <br><a href="http://campusmaps.umn.edu/kenneth-h-keller-hall">Keller Hall</a> 2-260</p><img alt="image" src="images/keller.jpg"></td>
+                <td><img alt="image" src="images/gopher.png"></td>
+            </tr>
+            <tr id="friday">
+                <th>Fri</th>
+                <td class="anderson"><p><b>CSCI 2021</b> <br><time>10:10</time> - <time>11:00</time> <br>Anderson Hall 270</p><img alt="image" src="images/anderson.jpg"></td>
+                <td class="molecular"><p><b>CSCI 2041</b> <br><time>11:15</time> - <time>12:05</time> <br>Molecular Cell Biology 3-120</p><img alt="image" src="images/molecular.jpg"></td>
+                <td><img alt="image" src="images/gopher.png"></td>
+                <td><img alt="image" src="images/gopher.png"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="search">
+
+          <label for="radius">Radius:</label> <input id="radius" type="text">
+          <button onclick="findNearbyRestaurant()">Find Nearby Restaurant</button><br>
+          <label for="destination">Destination:</label> <input id='destination' type="text">
+          <button id="navButton" onclick="getDirection()">Navigation</button><br>
+          <label class="radio">Walking</label><input value="WALKING" type="radio" name="vehicle">
+          <label class="radio">Driving</label><input value="DRIVING" type="radio" name="vehicle">
+          <label class="radio">Transit</label><input value="TRANSIT" type="radio" name="vehicle">
+          <label class="radio">Biking</label><input value="BICYCLING" type="radio" name="vehicle">
+        </div>
+        <div id="map"></div>
+        <div id="navPanel"></div>
+
+        <div class="reference">
+            <p>This page has been tested on Chrome, Firefox and Safari.</p>
+        </div>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAanAUroipqqcvs9gusUqsVW-wUOlVvuZo&libraries=places&callback=initMap"></script>
+        <div id="twitter">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/UMN" data-widget-id="920115999319429120">#UMN Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+        </div>
+    </body>
+</html>
