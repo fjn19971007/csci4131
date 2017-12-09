@@ -1,0 +1,106 @@
+body {
+    margin: auto 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    margin: 0;
+    background-color: #800000;
+    height: 50px;
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .left {
+    float: left;
+    margin: 0;
+    overflow: auto;
+    background-color: #800000;
+    height: 50px;
+    margin: 0;
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .right {
+    float: right;
+    margin: 0;
+    overflow: auto;
+    background-color: #800000;
+    height: 50px;
+    margin: 0;
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    text-align: center;
+ }
+
+  .active {
+    float: left;
+    background-color: white;
+    color: #800000;
+    height: 50px;
+    margin: 0;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #800000;
+  }
+
+  h2 {
+      text-align:center;
+  }
+
+  .userList {
+    background-color: #cccccc;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    border: solid #444444 1px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+  .userList input{
+    width: 65%;
+  }
+
+
+  .table {
+    margin: auto;
+    background-color: #ffffff;
+    border: solid #cccccc;
+    border-radius: 10px;
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .table td {
+    background-color: #24d6b0;
+    border: solid white 2px;
+    border-collapse: collapse;
+    border-radius: 13px;
+    background-clip: padding-box;
+    overflow: hidden;
+  }
+
+  .form {
+    background-color: #cccccc;
+    width: 50%;
+    margin: auto;
+    border: solid #444444 1px;
+    border-radius: 10px;
+    padding: 30px;
+    
+  }
+

@@ -1,0 +1,301 @@
+body {
+    margin: auto;
+    background-color: #f2f2f2;
+  }
+
+p {
+  text-align: center;
+}
+
+  #table {
+      width: 644px;
+      margin:0 auto;
+      border-collapse:collapse;
+  }
+
+  #table,#table td,#table th {
+      border: 1px solid grey;
+      text-align:center;
+  }
+
+  #table td:hover {
+    cursor: pointer;
+  }
+
+  #table td:hover img {
+    display: block;
+  }
+
+  #table th {
+      font-weight:bold;
+  }
+
+  #table tr:nth-child(odd) {
+      background-color:#aaaaaa;
+  }
+
+  #table tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  div {
+    margin: auto;
+  }
+  div.reference {
+      text-align:center;
+      font-style:italic;
+
+  }
+
+  caption {
+      font-family: Arial;
+      font-size: 30px;
+  }
+
+  nav {
+    margin: 0;
+    overflow: auto;
+    background-color: #800000;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color:white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav a.active {
+    background-color: white;
+    color: #800000;
+  }
+
+  nav a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #800000;
+  }
+
+  h2 {
+      text-align:center;
+  }
+
+  h1 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  input {
+      margin:0 auto;
+      border:1px solid #ccc;
+      display:inline-block;
+      padding:5px;
+      display: table-cell;
+  }
+
+  input[type="text"] {
+      width:60%;
+  }
+  input[type="submit"] {
+    margin-left: 75%;
+    text-align: center;
+    width:40%;
+    padding: 8px;
+    background-color:#4CAF50;
+    color:white;
+  }
+
+  form {
+      text-align: left;
+      display: table;
+      margin:0 auto;
+      background-color:#dddddd;
+      width: 700px;
+      height:300px;
+      padding:10px;
+  }
+
+  form h2 {
+    display: table-caption;
+  }
+
+  form p {
+    display: table-row;
+    text-align: left;
+  }
+
+  label {
+    display: table-cell;
+  }
+
+  time {
+    font-style:italic;
+  }
+
+  #table td img {
+    display: None;
+    margin: 0 auto;
+    width: 64px;
+    height: 35px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .modal {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 100px;
+    position: fixed;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    color: #444444;
+    background-color: #fefefe;
+    padding:15px;
+    border: 1px solid #bbbbbb;
+    width: 30%;
+    height: 35%;
+  }
+
+  .modal-content h2 {
+    font-weight: 600;
+  }
+
+  .modal-content p {
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .ok {
+    border-radius: 5px;
+    border: none;
+    float: right;
+    background-color: #33ccff;
+    width: 80px;
+    height: 40px;
+    color: white;
+  }
+
+  .ok:hover {
+    background-color: #00ace6;
+  }
+
+  .scroll-left {
+    width: 644px;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+    color: #800000;
+    height: 40px;
+    font-size: 18px;
+  }
+  .scroll-left p {
+  text-align: center;
+  transform:translateX(100%);
+  animation: scroll-left 20s linear infinite;
+  }
+
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(150%);
+        }
+      100% {
+          transform: translateX(-250%);
+        }
+  }
+
+  @keyframes shine {
+      from {background-color: red;
+          color: yellow;}
+      to {background-color: yellow;
+          color: red;}
+  }
+
+  #map{
+    width: 644px;
+    height: 644px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #twitter {
+    width: 200px;
+    height: 200px;
+    right: 30px;
+    top: 50px;
+    position: fixed;
+  }
+
+  #search {
+    overflow: visible;
+    display: block;
+    background-color: white;
+    border:  0.5px solid #eeeeee;
+    height: 60px;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #search label {
+    display: inline-block;
+  }
+
+  #search input {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+  }
+
+  #radius {
+    width: 50px;
+  }
+
+  #destination {
+    width: 100px;
+  }
+
+  #search input[type=radio] {
+    width: 7%;
+  }
+
+  label.radio {
+    font-size: 12px;
+  }
+
+  #navPanel {
+    display: none;
+    background-color: white;
+    position: fixed;
+    left: 30px;
+    bottom: 80px;
+    height: 400px;
+    width: 260px;
+    overflow: scroll;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+  .errorMessage p {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    margin: auto 0;
+    padding: 20px;
+  }
+

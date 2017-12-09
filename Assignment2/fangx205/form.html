@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="application/javascript" src="script_form.js"></script>
+        <meta charset="utf-8">
+        <title>Calendar Input</title>
+    </head>
+    <body>
+      <div>
+        <nav>
+          <a href="calendar.html">My Calendar</a>
+          <a class= "active" href="form.html">Form Input</a>
+        </nav>
+      </div>
+        <form id="form" action="http://www-users.cselabs.umn.edu/~tulaj001/form_handler.php" method="get" onsubmit="return validateForm()">
+            <h1>Calendar Input</h1>
+            <p>
+              <label>Event Name</label>
+              <input id="eventName" type="text" name="eventname" placeholder="Class name" required><br>
+            </p>
+            <p>
+              <label>Start Time</label>
+              <input type="time" name="starttime" required><br>
+            </p>
+            <p>
+              <label>End Time</label>
+              <input type="time" name="endtime" required><br>
+            </p>
+            <p>
+              <label>Location</label>
+              <input id="location" type="text" name="location" placeholder="Class location" required><br>
+            </p>
+            <p>
+              <label>Day of the week</label>
+              <select name="day">
+                  <option value="Monday" selected>Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+              </select>
+            </p>
+        <br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <div class="reference">
+          <p>This page has been tested on Chrome, Firefox and Safari.</p>
+        </div>
+
+        <div id="errorMessage" class="modal">
+          <div class="modal-content">
+            <img class="icon" alt="close" src="images/close.png">
+            <h2>Error</h2>
+            <p>Event Name and Location must be alphanumeric</p>
+            <button id="okButton" class="ok" onclick="errorButton()">OK</button>
+          </div>
+        </div>
+
+      </body>
+</html>

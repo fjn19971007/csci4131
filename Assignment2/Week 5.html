@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>set and clear interval example</title>
+  </head>
+
+  <body>
+  <input type="text" id="clock">
+
+  <script>
+
+    var $ = function(id) {
+      return document.getElementById(id);
+    }
+
+    var int = setInterval(function(){clock()}, 1000);
+
+    function clock() {
+      var datatoday = new Date();
+      var timenow = datatoday.toLocalTimeString();
+      $("clock").value = timenow;
+    }
+    </script>
+    

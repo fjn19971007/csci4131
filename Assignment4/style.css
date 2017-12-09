@@ -1,0 +1,76 @@
+table {
+    margin:0 auto;
+    width:70%;
+    border-collapse:collapse;
+}
+
+table,td,th {
+    border: 1px solid grey;
+    text-align:center;
+    padding:10px;
+}
+
+th {
+    font-weight:bold;
+}
+
+tr:nth-child(odd) {
+    background-color:#bbbbbb;
+}
+
+div {
+    text-align:center;
+    font-style:italic;
+}
+
+caption {
+    font-family: Arial;
+    font-size: 30px;
+}
+
+nav {
+    text-align:center;
+    padding:15px;
+    font-size:20px;
+}
+
+h3 {
+    background-color:hsla(0, 100%, 50%, 0.3);
+    color:#8080ff;
+    text-align:center;
+}
+h2 {
+    text-align:center;
+}
+
+input {
+    margin:0 auto;
+    border:1px solid #ccc;
+    display:inline-block;
+    padding:5px;
+}
+
+input[type="text"] {
+    width:50%;
+}
+input[type="submit"] {
+  text-align:center;
+  margin:auto;
+}
+form {
+    margin:0 auto;
+    background-color:#eeeeee;
+    width:40%;
+    padding:5px;
+}
+
+
+input[type=submit] {
+    width:20%;
+    background-color:#4CAF50;
+    color:white;
+}
+
+time {
+    font-style:italic;
+}

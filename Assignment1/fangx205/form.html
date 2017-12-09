@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Calendar Input</title>
+    </head>
+    <body>
+      <div>
+        <nav><a href="calendar.html">My Calendar</a> &nbsp; &nbsp; <a href="form.html">Form Input</a></nav>
+      </div>
+        <form action="http://www-users.cselabs.umn.edu/~tulaj001/form_handler.php" method="get">
+            <h2>Calendar Input</h2>
+            Event Name<input type="text" name="eventname" placeholder="Class name"><br>
+            Start Time
+            <input type="time" name="starttime"><br>
+            End Time
+            <input type="time" name="endtime"><br>
+            Location
+            <input type="text" name="location" placeholder="Class location"><br>
+            Day of the week
+            <select name="day">
+                <option value="Monday" selected>Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+        <div>
+          <p>This page has been tested on Chrome, Firefox and Safari.</p>
+        </div>
+      </body>
+</html>

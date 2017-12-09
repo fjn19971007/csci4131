@@ -1,0 +1,1 @@
+{"eventName":"CSCI 2021","startTime":"03:41","endTime":"04:43","location":"Keller Hall","day":"Monday"}, {"eventName":"CSCI 2021","startTime":"04:43","endTime":"03:42","location":"Coffman union","day":"Monday"}

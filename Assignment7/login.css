@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+    background-color: #b3d9ff;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding:10px;
+}
+
+.loginDiv {
+    background-color: #adebad;
+    margin-top: 100px;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.loginTable p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.errorMessage {
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    margin: auto 0;
+    padding: 10px;
+  }
+
+div p {
+  text-align: center;
+}
