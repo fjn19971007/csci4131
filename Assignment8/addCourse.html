@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Add Course</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><b>Spring 18 Course Offering</b></a></li>
+          <li><a href="addCourse.html"><b>Add Course</b></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+    <div class="row">
+      <p><br/></p>
+      <p><br/></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <form name = "addCourse" method = "post" action="/postCourse">
+            <p></p>
+            <table class="table table-bordered table-hover">
+            <tbody>
+
+              <tr>
+                  <td class="col-md-6">Course Id</td>
+                  <td class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="courseId" required maxlength="15">
+                    </div>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td class="col-md-6">Course Title</td>
+                  <td class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="courseTitle" required maxlength="15">
+                    </div>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td class="col-md-6">Course Credit</td>
+                  <td class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="courseCredit" required maxlength="15">
+                    </div>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td class="col-md-6">Course Term</td>
+                  <td class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="courseTerm" required maxlength="15">
+                    </div>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td class="col-md-6">Course Instructor</td>
+                  <td class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="courseInstructor" required maxlength="15">
+                    </div>
+                  </td>
+              </tr>
+
+
+              <tr>
+                <td class="col-md-6"></td>
+                <td class="col-md-6">
+                  <input type="submit" value="Submit">
+                </td>
+              </tr>
+
+            </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+  </body>
+</html>
